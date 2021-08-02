@@ -1,25 +1,24 @@
-//creating a navigation bar
+//creating a Heading for the page
 const header = document.getElementById("header1");
 const div = document.createElement('div');
 div.setAttribute ("id", "heading")
 div.textContent = "The Space Bar";
 
+//creating a navigation bar
 const navBar = document.createElement('nav');
 const unorderedList = document.createElement ('ul');
 const home = document.createElement ('li');
 const contactList = document.createElement ('li');
 
 home.textContent = "Home";
-contactList.textContent = "Contact";
+contactList.textContent = "Contact Us";
 
 navBar.classList = 'navBar';
-
 unorderedList.appendChild(home);
 unorderedList.appendChild(contactList);
 navBar.appendChild(unorderedList);
 div.appendChild(navBar);
 header.appendChild(div);
-
 
 //body manipulation - heading
 const main = document.querySelector(".title");
@@ -32,14 +31,8 @@ const para = document.createElement('h2');
 para.setAttribute("class", "paragraph");
 para.textContent = "At the Space Bar we provide you with links to the latest Space News. This is the fun SPACE. Click on any image below for an exciting Space-related story!";
 
-
-const quote =document.createElement('p')
-quote.textContent = ""
 main.appendChild(para);
 
-//background color and image
- document.querySelector(".paragraph").style.backgroundImage = "url('milky-way-2695569__340.jpg')";
-document.querySelector(".navBar").style.backgroundColor ="black";
 
 //inserting images
 const section =document.createElement('section');
@@ -86,6 +79,13 @@ linkImages.setAttribute("class", "imaging")
 spaceImages.appendChild(linkImages);
 section.appendChild(spaceImages);
 main.appendChild(section);
+
+
+//footer
+const footer = document.querySelector(".footer");
+const quote =document.createElement('quote')
+quote.textContent= "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.  -Carl Sagan"
+footer.appendChild(quote);
 
 
 
