@@ -29,9 +29,8 @@ const titleHeading = document.createElement("h1");
 titleHeading.textContent = "Let's have a little outer space interaction!";
 main.appendChild(titleHeading);
 
-//inserting images
+/*inserting forms
 const section =document.createElement('section');
 const form = document.createElement('div1');
-//const linkImages =document.createElement('div');
 section.appendChild(div1);
-main.appendChild(section);
+main.appendChild(section);*/
