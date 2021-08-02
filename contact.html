@@ -4,12 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
     <title>Contact Page</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="main.js"></script>
+    <header id = "header1"></header>
+    <main class = "contents">
+
+        <section class="contactform">
+            <h1><b>Please feel free to contact us with any requests or suggestions!</b></h1>
+            <h1> Submit a Query </h1><br>
+            
+            <h2> Personal Details </h2>
+            <form id="myForm">
+                <!-- Name TextBox-->
+                <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email">
+                <br>	
+            
+            <h2> Please Select Your Gender </h2>
+                <!-- Gender RadioBox -->
+                <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">If you would rather not specify</label>
+            <br>	
+            
+            <h2> How can we assist you today? 
+                <br>Let's Chat! </h2>
+            
+                <!-- Type of query CheckBox -->
+                <input type="checkbox" id="QueryType1" name="comment" value="Comment">
+                    <label for="queryType1"> Comment</label><br>
+                <input type="checkbox" id="QueryType2" name="suggestion" value="Suggestion">
+                    <label for="queryType2"> Suggestion</label><br>
+                <input type="checkbox" id="QueryType3" name="question" value="Question">
+                    <label for="queryType3"> Question</label><br><br>
+                    <label for="Query">Comment/Suggestion/Question</label><br>
+                        <textarea id="query" name="query" rows="4" cols="50">
+                    
+                        </textarea>
+                        <br><br>
+                        <input type="submit" value="submit" onclick="return foo();" />
+                        <br>
+            </form>
+        </section>
+    </main>
+    <footer class = "footer">
+        Copyright &copy Kamo & Kelly 2021
+        <br>
+        <br>
+        <hr>
+    </footer>
+    <script src="contactpage.js"></script>
+
 </body>
 </html>

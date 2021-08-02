@@ -7,14 +7,16 @@ div.textContent = "The Space Bar";
 //creating a navigation bar
 const navBar = document.createElement('nav');
 const unorderedList = document.createElement ('ul');
-const home = document.createElement ('li');
 const contactList = document.createElement ('li');
 
-home.textContent = "Home";
-contactList.textContent = "Contact Us";
+
+let cpLink = document.createElement('a');
+cpLink.textContent= 'Contact Us';
+cpLink.classList.add('link');  
+cpLink.href = 'contact.html' 
+contactList.appendChild(cpLink);
 
 navBar.classList = 'navBar';
-unorderedList.appendChild(home);
 unorderedList.appendChild(contactList);
 navBar.appendChild(unorderedList);
 div.appendChild(navBar);
